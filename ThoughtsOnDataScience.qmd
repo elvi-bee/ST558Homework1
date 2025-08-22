@@ -33,7 +33,7 @@ Data science is a new and emerging field that is still being defined and finding
 
 ### Where I see myself in relation to these two fields
 
-Currently, I see myself learning as much about these two fields as I can and I hope to use what I learn to weave together my own path that merges Geography and spatial analysis with Statistics and Data Science. 
+Currently, I see myself learning as much about these two fields as I can and I hope to use what I learn to weave together my own path that merges Geography and spatial analysis with Statistics and Data Science.
 
 ## Section 2: R code
 
@@ -59,6 +59,6 @@ str(y)
 
 Plot of density of petal width
 
-```{r}
+```{r, echo=FALSE}
 plot(y)
 ```
