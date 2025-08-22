@@ -1,0 +1,60 @@
+---
+title: "ST558HW1"
+author: "Elvira McIntyre"
+format: html
+editor: visual
+---
+
+## Section 1: Thoughts on Data Science
+
+### What being a data scientist is about
+
+At a very high level, being a data scientist is about *extracting meaning from chaos and trying to convince other people to modify their behavior based on that meaning*. When we zoom in from this high level, data science becomes more nuanced than what can be captured in a single sentence. This week's readings described data science in 3 overarching tracks:
+
+-   Engineering
+
+-   Analysis
+
+-   Modeling & Inference
+
+Within these three tracks there are several sub-activities e.g. web scraping, data storage, data wranglers, analysts, subject matter experts, visualizers, modelers, and the list goes on and on. In this current day and age, I think being a data scientist can be about any or all of these things, from the high-level to the more granular.
+
+Data science is a new and emerging field that is still being defined and finding it's place among the other sciences. What being a data scientist is about today will likely change very rapidly. One a more philosophical level, and what might remain constant in the rapidly evolving future of technology, might be that being a data scientist is about being curious, agile, and tech-savvy, being patient with the chaos, honest with the meaning you create, and summoning age-old human instinct of storytelling to communicate your findings.
+
+### Some differences between data scientists and statisticians
+
+-   The size of their data sets: The difference that stood out to me most from this week's reading was that data scientist tend to work on larger, more complex, and diverse data sets, whereas statisticians tend to work on smaller, more focused, and possibly cleaner data sets.
+
+-   The age of their disciplines: After some research on Wikipedia, I learned that the term, Statistics, was introduced between 1500-1600 with early demography and census methods, and statistics as we know it today began evolving in the 1800s, whereas the term, data science, has been traced back to 1974. Just for fun (and because I am a Geographer): Here is a link to a map of the first US Enumeration in 1790 which shows early statistics in action: <https://www.census.gov/library/visualizations/1790/dec/population-map.html>
+
+-   The scales they work in: Statisticians may focus on explaining phenomena or research questions, whereas data scientists may need to create reproducible products that need to be part of larger software systems or production-ready products.
+
+-   The amount of math: statisticians have a more specialized, in-depth, and wider range of mathematical and statistical knowledge than what is typically needed by the average data scientist.
+
+## Section 2: Some R code (It works!)
+
+Creating an object: density of iris petal width
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+Characteristics of data (class, type, and structure)
+
+```{r}
+# check class of object
+class(y)
+
+#check the type of object
+typeof(y)
+
+# check the structure
+str(y)
+
+```
+
+Plot of density of petal width
+
+```{r}
+plot(y)
+```
